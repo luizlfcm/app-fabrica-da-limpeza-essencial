@@ -4,6 +4,7 @@ import path from 'path';
 import { temAcesso } from './_acesso.js';
 
 const FILES = {
+  base: { file: 'guia-essencial.pdf', name: 'Fabrica-da-Limpeza-Essencial-20-Receitas.pdf' },
   limp: { file: 'ouro-automotivo.pdf', name: 'Ouro-Automotivo-30-Formulas.pdf' },
   perf: { file: 'perfumes-casa-rico.pdf', name: 'Perfumes-Casa-de-Rico-30-Receitas.pdf' },
   leg: { file: 'guia-legalizacao.pdf', name: 'Guia-de-Legalizacao.pdf' },

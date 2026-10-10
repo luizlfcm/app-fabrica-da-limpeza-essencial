@@ -424,7 +424,7 @@ const CK='https://pagamento.luverisgroup.com.br/fdless';
 const FULL_URL='https://fabricadalimpeza.luverisgroup.com.br/';
 const CHECKOUT_URLS={base:CK,limp:CK+'/limp',perf:CK+'/perf',leg:CK+'/leg',upg:CK+'/upg'};
 function ckUrl(k){var u=CHECKOUT_URLS[k]||CK;try{var e=localStorage.getItem('fap_email');if(e)u+='?email='+encodeURIComponent(e);}catch(x){}return u;}
-const PDF_NAMES={limp:'Ouro-Automotivo-30-Formulas.pdf',leg:'Guia-de-Legalizacao.pdf',perf:'Perfumes-Casa-de-Rico-30-Receitas.pdf'};
+const PDF_NAMES={base:'Fabrica-da-Limpeza-Essencial-20-Receitas.pdf',limp:'Ouro-Automotivo-30-Formulas.pdf',leg:'Guia-de-Legalizacao.pdf',perf:'Perfumes-Casa-de-Rico-30-Receitas.pdf'};
 // Conteúdo pago NÃO vem no HTML: só é baixado da API depois de conferir o acesso do e-mail.
 const LOADED={};
 function _fapLoadLocked(){
@@ -631,7 +631,7 @@ function rAuto(){
       <div class="ck">${ckTxt}</div>
     </div>`;
   }).join('');
-  const dlWrap='';
+  const dlWrap=hasAccess?`<div class="dl-wrap"><button class="dl-btn" data-action="download-pdf" data-produto="base">📥 Baixar Guia Essencial (PDF)</button></div>`:'';
   return`
   <div class="sah">
     <div class="bb" data-action="go" data-v="home">‹</div>
