@@ -8,7 +8,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Fábrica da Limpeza Essencial">
 <title>Fábrica da Limpeza Essencial</title>
-<meta name="description" content="130+ fórmulas de limpeza profissionais — o guia completo para produzir e vender.">
+<meta name="description" content="200+ fórmulas de limpeza profissionais — o guia completo para produzir e vender.">
 <link rel="manifest" href="manifest.json">
 <script>
 !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
@@ -601,7 +601,7 @@ function rUpsell(){
     return`<div style="margin:20px 16px 0;padding:18px;background:linear-gradient(135deg,var(--card),rgba(22,163,74,.10));border:1.5px solid var(--grn);border-radius:var(--rl);text-align:center">
       <div style="font-size:11px;font-weight:800;color:var(--grn);letter-spacing:1px;text-transform:uppercase;margin-bottom:6px">✓ Upgrade liberado</div>
       <div style="font-size:16px;font-weight:800;margin-bottom:6px">Você tem a Fábrica da Limpeza Completa</div>
-      <div style="font-size:12px;color:var(--mut);line-height:1.5;margin-bottom:14px">As 130 fórmulas e as ferramentas bônus estão no app completo. Entre com o mesmo e-mail da compra.</div>
+      <div style="font-size:12px;color:var(--mut);line-height:1.5;margin-bottom:14px">As 200 fórmulas e as ferramentas bônus estão no app completo. Entre com o mesmo e-mail da compra.</div>
       <a href="${FULL_URL}" target="_blank" style="display:inline-block;background:linear-gradient(135deg,var(--acc),var(--acd));color:#fff;padding:13px 24px;border-radius:12px;font-weight:800;font-size:14px;text-decoration:none">Abrir a Fábrica da Limpeza Completa →</a>
     </div>`;
   }
@@ -626,7 +626,7 @@ function rUpsell(){
     <div style="font-size:11px;font-weight:800;color:var(--acl);letter-spacing:1px;text-transform:uppercase;margin-bottom:8px">🚀 Próximo nível · oferta exclusiva para você</div>
     <div style="font-size:21px;font-weight:800;line-height:1.25;margin-bottom:10px">Você tem 20 receitas. Quem vende de verdade tem a linha inteira.</div>
     <p style="font-size:13px;line-height:1.65;color:var(--mut);margin-bottom:12px">Com o Essencial você começa. Mas quem fatura com produtos de limpeza vende para a casa, o comércio e o condomínio, e cada cliente pede um produto diferente. Com a Fábrica da Limpeza Completa você atende todos.</p>
-    ${li('<b>130 fórmulas profissionais</b>: são <b>110 a mais</b> do que você já tem, para vender para mais tipos de cliente')}
+    ${li('<b>200 fórmulas profissionais</b>: são <b>180 a mais</b> do que você já tem, para vender para mais tipos de cliente')}
     ${li('<b>30 Receitas Caseiras</b> de entrada, baratas de produzir, para começar vendendo na vizinhança')}
     ${li('<b>Linha Especial Premium (20 fórmulas)</b>: perfumador de ambiente, linen spray, neutralizador de odor pet, limpa-colchão, linha para hotéis e Airbnb...')}
     ${li('<b>Mais opções em todas as categorias</b>: multiuso, cozinha, roupas, banheiro e pisos')}
@@ -808,7 +808,7 @@ function rForm(db,id,backView,backCat,parentView){
   <div style="margin:16px;padding:18px;background:linear-gradient(135deg,var(--card),rgba(232,114,12,.08));border:1px solid var(--acc);border-radius:var(--rl);text-align:center">
     <div style="font-size:11px;font-weight:800;color:var(--acl);letter-spacing:.5px;text-transform:uppercase;margin-bottom:6px">👀 Fórmula de demonstração gratuita</div>
     <div style="font-size:12px;color:var(--mut);margin-bottom:14px">Essa é 1 das 20 receitas completas. Desbloqueie o acesso total agora.</div>
-    <a href="${ckUrl('base')}" target="_blank" data-action="track-checkout" data-produto="base" style="display:inline-block;background:linear-gradient(135deg,var(--acc),var(--acd));color:#fff;padding:12px 24px;border-radius:var(--r);font-size:13px;font-weight:700;text-decoration:none">🔓 Desbloquear 130 fórmulas — R$43,90</a>
+    <a href="${ckUrl('base')}" target="_blank" data-action="track-checkout" data-produto="base" style="display:inline-block;background:linear-gradient(135deg,var(--acc),var(--acd));color:#fff;padding:12px 24px;border-radius:var(--r);font-size:13px;font-weight:700;text-decoration:none">🔓 Desbloquear 200 fórmulas — R$43,90</a>
   </div>`:'';
   const tbl=`<table class="ft"><thead><tr><th>Ingrediente</th><th>Quantidade</th></tr></thead><tbody>${(f.formula||[]).map(([i,q])=>`<tr><td>${i}</td><td>${q}</td></tr>`).join('')}</tbody></table>`;
   const ift=`<div class="ifl">${(f.ingFunc||[]).map(([n,d])=>`<div class="ifi"><div class="ifn">${n}</div><div class="ifd">${d}</div></div>`).join('')}</div>`;
