@@ -425,7 +425,7 @@ const PREVIEW_IDS=["fl001", "fl021", "fl036", "fl051", "fl066"];
 const CK='https://pagamento.luverisgroup.com.br/fdless';
 const FULL_URL='https://fabricadalimpeza.luverisgroup.com.br/';
 const CHECKOUT_URLS={base:CK,limp:CK+'/limp',perf:CK+'/perf',leg:CK+'/leg',upg:CK+'/upg'};
-function ckUrl(k){var u=CHECKOUT_URLS[k]||CK;try{var e=localStorage.getItem('fap_email');if(e)u+='?email='+encodeURIComponent(e);}catch(x){}return u;}
+function ckUrl(k){var u=(CHECKOUT_URLS[k]||CK)+'?utm_source=app&utm_medium='+(k==='base'?'preview':'upsell')+'&utm_content='+encodeURIComponent(k);try{var e=localStorage.getItem('fap_email');if(e)u+='&email='+encodeURIComponent(e);}catch(x){}return u;}
 const PDF_NAMES={base:'Fabrica-da-Limpeza-Essencial-20-Receitas.pdf',limp:'Ouro-Automotivo-30-Formulas.pdf',leg:'Guia-de-Legalizacao.pdf',perf:'Perfumes-Casa-de-Rico-30-Receitas.pdf'};
 // Conteúdo pago NÃO vem no HTML: só é baixado da API depois de conferir o acesso do e-mail.
 const LOADED={};
