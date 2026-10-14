@@ -20,12 +20,12 @@ export default async function handler(req, res) {
       return res.json({ success: false, error: 'Email não encontrado. Verifique se usou o mesmo email da compra.' });
     }
     const c = JSON.parse(data.result);
-    if (!(c.base || c.limp || c.perf || c.leg || c.upg)) {
+    if (!(c.base || c.limp || c.perf || c.leg || c.form || c.upg)) {
       return res.json({ success: false, error: 'Acesso não disponível. Entre em contato com o suporte.' });
     }
     return res.json({
       success: true,
-      permissions: { base: !!c.base, limp: !!c.limp, perf: !!c.perf, leg: !!c.leg, upg: !!c.upg },
+      permissions: { base: !!c.base, limp: !!c.limp, perf: !!c.perf, leg: !!c.leg, form: !!c.form, upg: !!c.upg },
     });
   } catch (e) {
     console.error('Login error:', e);

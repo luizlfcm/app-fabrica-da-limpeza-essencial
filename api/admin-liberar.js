@@ -6,7 +6,7 @@ import { randomBytes, timingSafeEqual } from 'crypto';
 
 const PREFIXO = 'fdless:';          // prefixo da chave no Upstash
 const TOKEN_PREFIXO = 'FES_';
-const PRODUTOS = ["base", "limp", "leg", "perf", "upg"];
+const PRODUTOS = ["base", "limp", "leg", "perf", "form", "upg"];
 const UPSTASH_DEFAULT_URL = '';
 
 function agora() {
